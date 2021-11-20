@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 
-public class ExampleSubsystem extends SubsystemBase {
+public class DriveTrain extends SubsystemBase {
   private SpeedController scRB, scRF, scLB, scLF;
 
   private SpeedControllerGroup scgR, scgL;
@@ -23,7 +23,7 @@ public class ExampleSubsystem extends SubsystemBase {
 
 
 
-  public ExampleSubsystem() {
+  public DriveTrain() {
     scRB = new Talon(Constants.DRIVE_RIGHT_BACK);
     scRF = new Talon(Constants.DRIVE_RIGHT_FRONT);
     scLB = new Talon(Constants.DRIVE_LEFT_BACK);
